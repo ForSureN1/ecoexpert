@@ -282,22 +282,23 @@ select {
   z-index: 1;
   display: flex;
   flex-direction: column;
-  row-gap: 30px;
 }
 
 .header__nav-col {
   display: flex;
   flex-direction: column;
-  row-gap: 15px;
   max-width: 401px;
+}
+
+.header__nav-col:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .header__nav-subtitle {
   display: flex;
   align-items: center;
-  -moz-column-gap: 15px;
-       column-gap: 15px;
   font-weight: 500;
+  margin-bottom: 15px;
   color: #ffffff;
 }
 
@@ -306,6 +307,7 @@ select {
   height: 36px;
   -o-object-fit: contain;
      object-fit: contain;
+  margin-right: 15px;
 }
 
 .header__nav-text {
@@ -331,7 +333,6 @@ select {
 .header__menu-list {
   display: flex;
   flex-direction: column;
-  row-gap: 40px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -512,6 +513,10 @@ select {
   transition: 0.3s ease-in-out;
 }
 
+.header__menu-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
 .header__menu-link {
   color: #ffffff;
   text-transform: uppercase;
@@ -550,8 +555,11 @@ select {
 .header__menu-nav.active {
   display: flex;
   flex-direction: column;
-  row-gap: 10px;
   padding-left: 100px;
+}
+
+.header__menu-nav .menu__item:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .header__menu-nav .menu__item a {
@@ -993,8 +1001,6 @@ select {
   align-items: center;
   justify-content: center;
   margin-top: 60px;
-  -moz-column-gap: 80px;
-       column-gap: 80px;
 }
 
 .hero__arrows::before {
@@ -1016,6 +1022,10 @@ select {
 
 .hero__arrows a:hover {
   transform: scale(1.3);
+}
+
+.hero__arrows a:first-child {
+  margin-right: 80px;
 }
 
 .hero__mouse {
@@ -1174,7 +1184,6 @@ select {
 
   .header__menu-list {
     left: 130px;
-    row-gap: 30px;
   }
 
   .header__menu-list.main-page .header__menu-item:nth-child(5) {
@@ -1207,6 +1216,10 @@ select {
 
   .header__menu-list.contacts-page .header__menu-item:nth-child(2) {
     padding-left: 50px;
+  }
+
+  .header__menu-item:not(:last-child) {
+    margin-bottom: 30px;
   }
 
   .header__menu-link {
@@ -1301,12 +1314,8 @@ select {
     padding: 6px;
   }
 
-  .header__nav-info {
-    row-gap: 15px;
-  }
-
-  .header__nav-col {
-    row-gap: 10px;
+  .header__nav-col:not(:last-child) {
+    margin-bottom: 15px;
   }
 
   .header__nav-subtitle img {
@@ -1315,7 +1324,7 @@ select {
   }
 
   .header__nav-subtitle {
-    row-gap: 10px;
+    margin-bottom: 10px;
     font-size: 14px;
   }
 
@@ -1363,7 +1372,6 @@ select {
 
   .header__menu-list {
     left: 150px;
-    row-gap: 20px;
   }
 
   .header__menu-list.main-page .header__menu-item:nth-child(1) {
@@ -1500,6 +1508,10 @@ select {
 
   .header__menu-list.contacts-page .header__menu-item:nth-child(6) {
     padding-left: 5px;
+  }
+
+  .header__menu-item:not(:last-child) {
+    margin-bottom: 20px;
   }
 
   .header__menu-content {
