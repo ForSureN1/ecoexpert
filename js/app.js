@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    $('.hero__slider').slick({
-        autoplay: true,
+    $('.hero__slider-1').slick({
+        autoplay: false,
         infinite: false,
         speed: 3000,
         autoplaySpeed: 4000,
@@ -15,12 +15,76 @@ document.addEventListener('DOMContentLoaded', () => {
         pauseOnFocus: false,
     })
 
-    $('.hero__slider').on('afterChange', function(event, slick, currentSlide, nextSlide) {
-        $('.hero__slider').find('.slick-current').prev('.slick-slide').prev('.slick-slide').removeClass('current-animate');
-        $('.hero__slider').find('.slick-current').prev('.slick-slide').removeClass('current-animate');
+    $('.hero__slider-2').slick({
+        autoplay: false,
+        infinite: false,
+        speed: 3000,
+        autoplaySpeed: 4000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        arrows: false,
+        focusOnSelect: false,
+        pauseOnHover: false,
+        draggable: false,
+        pauseOnFocus: false,
+    })
+
+    $('.hero__slider-3').slick({
+        autoplay: false,
+        infinite: false,
+        speed: 3000,
+        autoplaySpeed: 4000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        arrows: false,
+        focusOnSelect: false,
+        pauseOnHover: false,
+        draggable: false,
+        pauseOnFocus: false,
+    })
+
+    $('.hero__slider-1').on('afterChange', function(event, slick, currentSlide, nextSlide) {
+        $('.hero__slider-1').find('.slick-current').prev('.slick-slide').prev('.slick-slide').removeClass('current-animate');
+        $('.hero__slider-1').find('.slick-current').prev('.slick-slide').removeClass('current-animate');
     });
-    $('.hero__slider').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-        $('.hero__slider').find('.slick-current').addClass('current-animate')
+    $('.hero__slider-1').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+        $('.hero__slider-1').find('.slick-current').addClass('current-animate')
+    });
+
+    $('.hero__slider-2').on('afterChange', function(event, slick, currentSlide, nextSlide) {
+        $('.hero__slider-2').find('.slick-current').prev('.slick-slide').prev('.slick-slide').removeClass('current-animate');
+        $('.hero__slider-2').find('.slick-current').prev('.slick-slide').removeClass('current-animate');
+    });
+    $('.hero__slider-2').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+        $('.hero__slider-2').find('.slick-current').addClass('current-animate')
+    });
+
+    $('.hero__slider-3').on('afterChange', function(event, slick, currentSlide, nextSlide) {
+        $('.hero__slider-3').find('.slick-current').prev('.slick-slide').prev('.slick-slide').removeClass('current-animate');
+        $('.hero__slider-3').find('.slick-current').prev('.slick-slide').removeClass('current-animate');
+    });
+    $('.hero__slider-3').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+        $('.hero__slider-3').find('.slick-current').addClass('current-animate')
+    });
+
+    $('.prev-arrow').click(function() {
+        $('.hero__slider-1').slick('slickPrev');
+        $('.hero__slider-2').slick('slickPrev');
+        $('.hero__slider-3').slick('slickPrev');
+    });
+
+    $('.next-arrow').click(function() {
+        $('.hero__slider-1').slick('slickNext');
+        $('.hero__slider-2').slick('slickNext');
+        $('.hero__slider-3').slick('slickNext');
+    });
+
+    $('.hero__nav-swap').click(function() {
+        $('.hero__slider-1').slick('slickNext');
+        $('.hero__slider-2').slick('slickNext');
+        $('.hero__slider-3').slick('slickNext');
     });
 
     let burger = document.querySelector('.burger')

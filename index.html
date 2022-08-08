@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <title>Главная</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css?_v=20220805182629">
-    <link rel="stylesheet" href="css/style.css?_v=20220805182629">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css?_v=20220808150150">
+    <link rel="stylesheet" href="css/style.css?_v=20220808150150">
 </head>
 
 <body>
@@ -121,7 +121,7 @@
 </header>
     <main>
         <section class="hero">
-            <div class="hero__slider hero__slider-one">
+            <div class="hero__slider hero__slider-1 hero__slider-one">
                 <div class="hero__slider-item">
                     <img src="img/slide-photo-1.jpg" alt="">
                 </div>
@@ -132,7 +132,7 @@
                     <img src="img/slide-photo-3.jpg" alt="">
                 </div>
             </div>
-            <div class="hero__slider hero__slider-two">
+            <div class="hero__slider hero__slider-2 hero__slider-two">
                 <div class="hero__slider-item">
                     <img src="img/slide-photo-1.jpg" alt="">
                 </div>
@@ -143,7 +143,7 @@
                     <img src="img/slide-photo-3.jpg" alt="">
                 </div>
             </div>
-            <div class="hero__slider hero__slider-three">
+            <div class="hero__slider hero__slider-3 hero__slider-three">
                 <div class="hero__slider-item">
                     <img src="img/slide-photo-1.jpg" alt="">
                 </div>
@@ -152,6 +152,55 @@
                 </div>
                 <div class="hero__slider-item">
                     <img src="img/slide-photo-3.jpg" alt="">
+                </div>
+            </div>
+            <div class="container">
+                <div class="hero__container">
+                    <h1 class="hero__title">
+                        ecoexpert
+                    </h1>
+                    <div class="hero__text">
+                        <p>Гарантия высокого профессионализма</p>
+                    </div>
+                    <div class="hero__arrows">
+                        <a class="prev-arrow">
+                            <svg width="39" height="7" viewBox="0 0 39 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.00002 1L1.00003 6H6.00002V1Z" fill="white"/>
+                                <path d="M38 6H6.00002M6.00002 6H1.00003L6.00002 1V6Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a class="next-arrow">
+                            <svg width="39" height="7" viewBox="0 0 39 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M33 1L38 6H33V1Z" fill="white"/>
+                                <path d="M1 6H33M33 6H38L33 1V6Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <a href="#who" class="hero__mouse">
+                        <img src="img/mouse.png" alt="">
+                    </a>
+                    <div class="hero__nav">
+                        <a href="#" class="hero__nav-share">
+                            <img src="img/share.png" alt="">
+                            <span>Поделиться</span>
+                        </a>
+                        <div class="hero__nav-search">
+                            <form action="">
+                                <label for="search">
+                                    <input class="hero__nav-input" type="text" placeholder="Я ищу...">
+                                    <input class="hero__nav-submit" type="submit" value="">
+                                </label>
+                            </form>
+                        </div>
+                        <div class="hero__nav-swap">
+                            <span>Поменять</span>
+                            <svg width="43" height="48" viewBox="0 0 43 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.134326 11.3518L20.5928 0L41.8333 11.28L42.0236 11.17L42.158 35.5652L20.783 47.9282L20.7826 48L0 35.9209L0.134422 11.3518L0.134326 11.3518Z" fill="#DBE283"/>
+                                <path class="swap-arrow" d="M21 15C22.5498 14.9977 24.0736 15.3992 25.421 16.165L24.293 17.293C24.1532 17.4328 24.058 17.611 24.0194 17.805C23.9809 17.9989 24.0007 18.1999 24.0763 18.3826C24.152 18.5653 24.2801 18.7215 24.4445 18.8314C24.609 18.9413 24.8023 18.9999 25 19H29C29.2652 19 29.5196 18.8946 29.7071 18.7071C29.8946 18.5196 30 18.2652 30 18V14C30 13.8022 29.9413 13.6089 29.8314 13.4445C29.7215 13.2801 29.5654 13.152 29.3827 13.0763C29.2 13.0006 28.9989 12.9808 28.805 13.0194C28.611 13.058 28.4329 13.1532 28.293 13.293L26.883 14.7C25.219 13.6468 23.3027 13.0596 21.3343 12.9997C19.3659 12.9399 17.4175 13.4095 15.6926 14.3597C13.9677 15.3099 12.5295 16.7057 11.5281 18.4015C10.5268 20.0972 9.99904 22.0307 10 24C10 24.2652 10.1054 24.5196 10.2929 24.7071C10.4804 24.8946 10.7348 25 11 25C11.2652 25 11.5196 24.8946 11.7071 24.7071C11.8946 24.5196 12 24.2652 12 24C12.0026 21.6139 12.9517 19.3262 14.639 17.639C16.3262 15.9517 18.6139 15.0026 21 15Z" fill="black"/>
+                                <path class="swap-arrow" d="M31 23C30.7348 23 30.4804 23.1054 30.2929 23.2929C30.1054 23.4804 30 23.7348 30 24C29.9974 26.3861 29.0483 28.6738 27.361 30.361C25.6738 32.0483 23.3861 32.9974 21 33C19.4503 33.0028 17.9267 32.6009 16.58 31.834L17.707 30.707C17.8468 30.5671 17.942 30.389 17.9806 30.195C18.0192 30.0011 17.9993 29.8 17.9237 29.6173C17.848 29.4346 17.7199 29.2785 17.5555 29.1686C17.391 29.0587 17.1978 29 17 29H13C12.7348 29 12.4804 29.1054 12.2929 29.2929C12.1054 29.4804 12 29.7348 12 30V34C12 34.1978 12.0585 34.3911 12.1684 34.5556C12.2782 34.72 12.4343 34.8483 12.617 34.924C12.7383 34.9746 12.8685 35.0004 13 35C13.2652 34.9999 13.5195 34.8946 13.707 34.707L15.118 33.3C16.876 34.417 18.9172 35.007 21 35C23.9163 34.9966 26.7122 33.8365 28.7744 31.7744C30.8365 29.7122 31.9966 26.9163 32 24C32 23.7348 31.8946 23.4804 31.7071 23.2929C31.5196 23.1054 31.2652 23 31 23Z" fill="black"/>
+                            </svg>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -160,11 +209,11 @@
     <div class="container">
     </div>
 </footer>
-<!-- <script src="js/jquery-3.6.0.min.js?_v=20220805182629"></script> -->
-<!-- <script src="js/slick.min.js?_v=20220805182629"></script> -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20220805182629" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js?_v=20220805182629"></script>
-<script src="js/app.js?_v=20220805182629"></script>
+<!-- <script src="js/jquery-3.6.0.min.js?_v=20220808150150"></script> -->
+<!-- <script src="js/slick.min.js?_v=20220808150150"></script> -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20220808150150" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js?_v=20220808150150"></script>
+<script src="js/app.js?_v=20220808150150"></script>
 </body>
 
 </html>
