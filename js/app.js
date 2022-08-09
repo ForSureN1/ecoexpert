@@ -144,6 +144,22 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     }
 
+    let svgPathOne = document.querySelectorAll('.who__img-svg-js path');
+    if (svgPathOne.length) {
+        svgPathOne.forEach((path, i) => {
+            path.classList.add('way');
+            // path.style.fill = 'transparent';
+            // path.style.transition = '.2s ease-in-out';
+        });
+    }
+
+    $('.way').waypoint({
+        handler: function() {
+            $(this.element).addClass('way--active')
+        },
+        offset: '80%',
+    })
+
 })
 
 function submitForm() {
