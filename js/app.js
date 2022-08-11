@@ -160,6 +160,29 @@ document.addEventListener('DOMContentLoaded', () => {
         offset: '80%',
     })
 
+    let competenceBlock = document.querySelector('.competence');
+    if (competenceBlock) {
+        let competenceItems = document.querySelector('.competence__items');
+        competenceBlock.addEventListener('mouseover', e => {
+            const target = e.target;
+            if (target.classList.contains('js-hover-block-left')) {
+                competenceItems.style.marginLeft = `${competenceItems.clientWidth - window.innerWidth}px`;
+            }
+            if (target.classList.contains('js-hover-block-right')) {
+                competenceItems.style.marginRight = `${competenceItems.clientWidth - window.innerWidth}px`;
+            }
+        });
+        competenceBlock.addEventListener('mouseout', e => {
+            const target = e.target;
+            if (!target.classList.contains('js-hover-block-left')) {
+                competenceItems.style.marginLeft = `0px`;
+            }
+            if (!target.classList.contains('js-hover-block-right')) {
+                competenceItems.style.marginRight = `0px`;
+            }
+        })
+    }
+
 })
 
 function submitForm() {
