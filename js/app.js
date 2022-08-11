@@ -144,22 +144,27 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     }
 
+    // add class svg path
     let svgPathOne = document.querySelectorAll('.who__img-svg-js path');
     if (svgPathOne.length) {
         svgPathOne.forEach((path, i) => {
             path.classList.add('way');
-            // path.style.fill = 'transparent';
-            // path.style.transition = '.2s ease-in-out';
+            let delay = i * 0.005;
+            path.style.transitionDelay = `${delay}s`
+                // path.style.fill = 'transparent';
+                // path.style.transition = '.2s ease-in-out';
         });
     }
 
+    // way points
     $('.way').waypoint({
         handler: function() {
             $(this.element).addClass('way--active')
         },
-        offset: '80%',
+        offset: '90%',
     })
 
+    // main page competence block
     let competenceBlock = document.querySelector('.competence');
     if (competenceBlock) {
         let competenceItems = document.querySelector('.competence__items');
@@ -182,6 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         })
     }
+
 
 })
 
