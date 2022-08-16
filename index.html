@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <title>Главная</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css?_v=20220812150515">
-    <link rel="stylesheet" href="css/style.css?_v=20220812150515">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css?_v=20220816115650">
+    <link rel="stylesheet" href="css/style.css?_v=20220816115650">
 </head>
 
 <body>
     <header class="header">
     <div class="container">
         <div class="header__container">
-            <div class="burger">
+            <div class="burger js-remove-request-btn">
                 <div id="nav-icon2">
                     <span></span>
                     <span></span>
@@ -25,15 +25,15 @@
                     <span></span>
                 </div>
             </div>
-            <a href="#" class="header__logo">
+            <a href="#" class="header__logo js-remove-request-btn">
                 <img src="img/logo.png" alt="EcoExpert">
             </a>
-            <div class="header__lang">
+            <div class="header__lang js-remove-request-btn">
                 <a href="#" class="header__lang-item active">Ru</a>
                 <a href="#" class="header__lang-item">Kz</a>
                 <a href="#" class="header__lang-item">En</a>
             </div>
-            <div class="header__nav">
+            <div class="header__nav js-remove-request-btn">
                 <div class="container">
                     <div class="header__nav-container">
                         <div class="header__nav-title">
@@ -119,6 +119,7 @@
         </div>
     </div>
 </header>
+    <a href="javascript:;" class="btn-request">Оставить заявку</a>
     <main>
         <section class="hero">
             <div class="hero__slider hero__slider-1 hero__slider-one">
@@ -163,28 +164,28 @@
                         <p>Гарантия высокого профессионализма</p>
                     </div>
                     <div class="hero__arrows">
-                        <a class="prev-arrow">
+                        <a href="javascript:;" class="prev-arrow js-remove-request-btn">
                             <svg width="39" height="7" viewBox="0 0 39 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M6.00002 1L1.00003 6H6.00002V1Z" fill="white"/>
                                 <path d="M38 6H6.00002M6.00002 6H1.00003L6.00002 1V6Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </a>
-                        <a class="next-arrow">
+                        <a href="javascript:;" class="next-arrow js-remove-request-btn">
                             <svg width="39" height="7" viewBox="0 0 39 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M33 1L38 6H33V1Z" fill="white"/>
                                 <path d="M1 6H33M33 6H38L33 1V6Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </a>
                     </div>
-                    <a href="#who" class="hero__mouse">
+                    <a href="#who" class="hero__mouse js-remove-request-btn">
                         <img src="img/mouse.png" alt="">
                     </a>
                     <div class="hero__nav">
-                        <a href="#" class="hero__nav-share">
+                        <a href="#" class="hero__nav-share js-remove-request-btn">
                             <img src="img/share.png" alt="">
                             <span>Поделиться</span>
                         </a>
-                        <div class="hero__nav-search">
+                        <div class="hero__nav-search js-remove-request-btn">
                             <form action="">
                                 <label for="search">
                                     <input class="hero__nav-input" type="text" placeholder="Я ищу...">
@@ -192,7 +193,7 @@
                                 </label>
                             </form>
                         </div>
-                        <div class="hero__nav-swap">
+                        <div class="hero__nav-swap js-remove-request-btn">
                             <span>Поменять</span>
                             <svg width="43" height="48" viewBox="0 0 43 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.134326 11.3518L20.5928 0L41.8333 11.28L42.0236 11.17L42.158 35.5652L20.783 47.9282L20.7826 48L0 35.9209L0.134422 11.3518L0.134326 11.3518Z" fill="#DBE283"/>
@@ -484,7 +485,7 @@
                                 услуги на высоком профессиональном уровне.</p>
                             <p>За годы работы специалистами ТОО «ЭКОЭКСПЕРТ» разработано более 300 проектов по экологической части, проведено более 150 000 лабораторных испытаний, заказчиками которых являются предприятия различных отраслей промышленности.</p>
                         </div>
-                        <a href="#" class="who__link green-btn anim-right way">
+                        <a href="#" class="who__link green-btn anim-right way js-remove-request-btn">
                         Узнать подробнее
                         <svg width="29" height="7" viewBox="0 0 29 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M23 1L28 6H23V1Z" fill="white"/>
@@ -494,7 +495,7 @@
                         <div class="who__subtitle anim-right way">
                             <span>EcoExpert</span> на Youtube
                         </div>
-                        <div class="who__video anim-right way">
+                        <div class="who__video anim-right way js-remove-request-btn">
                             <img src="img/who-video.jpg" alt="">
                         </div>
                     </div>
@@ -503,7 +504,7 @@
         </section>
         <section class="competence">
             <div class="competence__items">
-                <a href="" class="competence__item js-hover-block-left">
+                <a href="" class="competence__item js-hover-block-left js-remove-request-btn">
                     <svg class="hexagon" width="353" height="402" viewBox="0 0 353 402" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M186.257 3.2161L342.757 93.658C348.786 97.1424 352.5 103.578 352.5 110.541V291.459C352.5 298.422 348.786 304.858 342.757 308.342L186.257 398.784C180.22 402.273 172.78 402.273 166.743 398.784L10.243 308.342C4.21362 304.858 0.5 298.422 0.5 291.459L0.5 110.541C0.5 103.578 4.21362 97.1424 10.243 93.658L166.743 3.2161C172.78 -0.272635 180.22 -0.272637 186.257 3.2161Z" fill="white" stroke="#289C39"/>
                     </svg>
@@ -525,7 +526,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ligula elementum mattis vitae aliquam nisl nulla pretium.</p>
                     </div>
                 </a>
-                <a href="" class="competence__item js-hover-block-left">
+                <a href="" class="competence__item js-hover-block-left js-remove-request-btn">
                     <svg class="hexagon" width="353" height="402" viewBox="0 0 353 402" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M186.257 3.2161L342.757 93.658C348.786 97.1424 352.5 103.578 352.5 110.541V291.459C352.5 298.422 348.786 304.858 342.757 308.342L186.257 398.784C180.22 402.273 172.78 402.273 166.743 398.784L10.243 308.342C4.21362 304.858 0.5 298.422 0.5 291.459L0.5 110.541C0.5 103.578 4.21362 97.1424 10.243 93.658L166.743 3.2161C172.78 -0.272635 180.22 -0.272637 186.257 3.2161Z" fill="white" stroke="#289C39"/>
                     </svg>
@@ -547,7 +548,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ligula elementum mattis vitae aliquam nisl nulla pretium.</p>
                     </div>
                 </a>
-                <a href="" class="competence__item js-hover-block-left">
+                <a href="" class="competence__item js-hover-block-left js-remove-request-btn">
                     <svg class="hexagon" width="353" height="402" viewBox="0 0 353 402" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M186.257 3.2161L342.757 93.658C348.786 97.1424 352.5 103.578 352.5 110.541V291.459C352.5 298.422 348.786 304.858 342.757 308.342L186.257 398.784C180.22 402.273 172.78 402.273 166.743 398.784L10.243 308.342C4.21362 304.858 0.5 298.422 0.5 291.459L0.5 110.541C0.5 103.578 4.21362 97.1424 10.243 93.658L166.743 3.2161C172.78 -0.272635 180.22 -0.272637 186.257 3.2161Z" fill="white" stroke="#289C39"/>
                     </svg>
@@ -569,7 +570,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ligula elementum mattis vitae aliquam nisl nulla pretium.</p>
                     </div>
                 </a>
-                <a href="" class="competence__item js-hover-block-left">
+                <a href="" class="competence__item js-hover-block-left js-remove-request-btn">
                     <svg class="hexagon" width="353" height="402" viewBox="0 0 353 402" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M186.257 3.2161L342.757 93.658C348.786 97.1424 352.5 103.578 352.5 110.541V291.459C352.5 298.422 348.786 304.858 342.757 308.342L186.257 398.784C180.22 402.273 172.78 402.273 166.743 398.784L10.243 308.342C4.21362 304.858 0.5 298.422 0.5 291.459L0.5 110.541C0.5 103.578 4.21362 97.1424 10.243 93.658L166.743 3.2161C172.78 -0.272635 180.22 -0.272637 186.257 3.2161Z" fill="white" stroke="#289C39"/>
                     </svg>
@@ -591,7 +592,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ligula elementum mattis vitae aliquam nisl nulla pretium.</p>
                     </div>
                 </a>
-                <a href="" class="competence__item">
+                <a href="" class="competence__item js-remove-request-btn">
                     <svg class="hexagon" width="353" height="402" viewBox="0 0 353 402" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M186.257 3.2161L342.757 93.658C348.786 97.1424 352.5 103.578 352.5 110.541V291.459C352.5 298.422 348.786 304.858 342.757 308.342L186.257 398.784C180.22 402.273 172.78 402.273 166.743 398.784L10.243 308.342C4.21362 304.858 0.5 298.422 0.5 291.459L0.5 110.541C0.5 103.578 4.21362 97.1424 10.243 93.658L166.743 3.2161C172.78 -0.272635 180.22 -0.272637 186.257 3.2161Z" fill="white" stroke="#289C39"/>
                     </svg>
@@ -613,7 +614,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ligula elementum mattis vitae aliquam nisl nulla pretium.</p>
                     </div>
                 </a>
-                <a href="" class="competence__item">
+                <a href="" class="competence__item js-remove-request-btn">
                     <svg class="hexagon" width="353" height="402" viewBox="0 0 353 402" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M186.257 3.2161L342.757 93.658C348.786 97.1424 352.5 103.578 352.5 110.541V291.459C352.5 298.422 348.786 304.858 342.757 308.342L186.257 398.784C180.22 402.273 172.78 402.273 166.743 398.784L10.243 308.342C4.21362 304.858 0.5 298.422 0.5 291.459L0.5 110.541C0.5 103.578 4.21362 97.1424 10.243 93.658L166.743 3.2161C172.78 -0.272635 180.22 -0.272637 186.257 3.2161Z" fill="white" stroke="#289C39"/>
                     </svg>
@@ -635,7 +636,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ligula elementum mattis vitae aliquam nisl nulla pretium.</p>
                     </div>
                 </a>
-                <a href="" class="competence__item">
+                <a href="" class="competence__item js-remove-request-btn">
                     <svg class="hexagon" width="353" height="402" viewBox="0 0 353 402" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M186.257 3.2161L342.757 93.658C348.786 97.1424 352.5 103.578 352.5 110.541V291.459C352.5 298.422 348.786 304.858 342.757 308.342L186.257 398.784C180.22 402.273 172.78 402.273 166.743 398.784L10.243 308.342C4.21362 304.858 0.5 298.422 0.5 291.459L0.5 110.541C0.5 103.578 4.21362 97.1424 10.243 93.658L166.743 3.2161C172.78 -0.272635 180.22 -0.272637 186.257 3.2161Z" fill="white" stroke="#289C39"/>
                     </svg>
@@ -657,7 +658,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ligula elementum mattis vitae aliquam nisl nulla pretium.</p>
                     </div>
                 </a>
-                <a href="" class="competence__item js-hover-block-right">
+                <a href="" class="competence__item js-hover-block-right js-remove-request-btn">
                     <svg class="hexagon" width="353" height="402" viewBox="0 0 353 402" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M186.257 3.2161L342.757 93.658C348.786 97.1424 352.5 103.578 352.5 110.541V291.459C352.5 298.422 348.786 304.858 342.757 308.342L186.257 398.784C180.22 402.273 172.78 402.273 166.743 398.784L10.243 308.342C4.21362 304.858 0.5 298.422 0.5 291.459L0.5 110.541C0.5 103.578 4.21362 97.1424 10.243 93.658L166.743 3.2161C172.78 -0.272635 180.22 -0.272637 186.257 3.2161Z" fill="white" stroke="#289C39"/>
                     </svg>
@@ -679,7 +680,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ligula elementum mattis vitae aliquam nisl nulla pretium.</p>
                     </div>
                 </a>
-                <a href="" class="competence__item js-hover-block-right">
+                <a href="" class="competence__item js-hover-block-right js-remove-request-btn">
                     <svg class="hexagon" width="353" height="402" viewBox="0 0 353 402" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M186.257 3.2161L342.757 93.658C348.786 97.1424 352.5 103.578 352.5 110.541V291.459C352.5 298.422 348.786 304.858 342.757 308.342L186.257 398.784C180.22 402.273 172.78 402.273 166.743 398.784L10.243 308.342C4.21362 304.858 0.5 298.422 0.5 291.459L0.5 110.541C0.5 103.578 4.21362 97.1424 10.243 93.658L166.743 3.2161C172.78 -0.272635 180.22 -0.272637 186.257 3.2161Z" fill="white" stroke="#289C39"/>
                     </svg>
@@ -701,7 +702,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ligula elementum mattis vitae aliquam nisl nulla pretium.</p>
                     </div>
                 </a>
-                <a href="" class="competence__item js-hover-block-right">
+                <a href="" class="competence__item js-hover-block-right js-remove-request-btn">
                     <svg class="hexagon" width="353" height="402" viewBox="0 0 353 402" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M186.257 3.2161L342.757 93.658C348.786 97.1424 352.5 103.578 352.5 110.541V291.459C352.5 298.422 348.786 304.858 342.757 308.342L186.257 398.784C180.22 402.273 172.78 402.273 166.743 398.784L10.243 308.342C4.21362 304.858 0.5 298.422 0.5 291.459L0.5 110.541C0.5 103.578 4.21362 97.1424 10.243 93.658L166.743 3.2161C172.78 -0.272635 180.22 -0.272637 186.257 3.2161Z" fill="white" stroke="#289C39"/>
                     </svg>
@@ -723,7 +724,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ligula elementum mattis vitae aliquam nisl nulla pretium.</p>
                     </div>
                 </a>
-                <a href="" class="competence__item js-hover-block-right">
+                <a href="" class="competence__item js-hover-block-right js-remove-request-btn">
                     <svg class="hexagon" width="353" height="402" viewBox="0 0 353 402" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M186.257 3.2161L342.757 93.658C348.786 97.1424 352.5 103.578 352.5 110.541V291.459C352.5 298.422 348.786 304.858 342.757 308.342L186.257 398.784C180.22 402.273 172.78 402.273 166.743 398.784L10.243 308.342C4.21362 304.858 0.5 298.422 0.5 291.459L0.5 110.541C0.5 103.578 4.21362 97.1424 10.243 93.658L166.743 3.2161C172.78 -0.272635 180.22 -0.272637 186.257 3.2161Z" fill="white" stroke="#289C39"/>
                     </svg>
@@ -752,7 +753,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ligula elementum mattis vitae aliquam nisl nulla pretium. Felis tristique nullam at sodales libero ipsum erat. Id iaculis sagittis orci tellus semper nec, sit a nibh. Aliquam
                             nunc diam ipsum lacinia. A eu, aliquam dis pharetra. Massa sed sed elit tortor nunc, a.</p>
                     </div>
-                    <a href="" class="comptence__info-link green-btn">Смотреть все
+                    <a href="№" class="comptence__info-link green-btn js-remove-request-btn">Смотреть все
                         <svg width="29" height="7" viewBox="0 0 29 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M23 1L28 6H23V1Z" fill="white"/>
                             <path d="M1 6H23M23 6H28L23 1V6Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
@@ -901,7 +902,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ligula elementum mattis vitae aliquam nisl nulla pretium. Felis tristique nullam at sodales libero ipsum erat. Id iaculis sagittis orci tellus semper nec, sit a nibh.
                                 Aliquam nunc diam ipsum lacinia. A eu, aliquam dis pharetra. Massa sed sed elit tortor nunc, a.</p>
                         </div>
-                        <a href="" class="project__info-link green-btn">Смотреть все 
+                        <a href="№" class="project__info-link green-btn js-remove-request-btn">Смотреть все 
                             <svg width="29" height="7" viewBox="0 0 29 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M23 1L28 6H23V1Z" fill="white"/>
                                 <path d="M1 6H23M23 6H28L23 1V6Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
@@ -918,7 +919,7 @@
                             <div class="project__item-text">
                                 <p>В течение 2015 года отедлом по аттестации рабочих мест ТОО "ЭКОЭКСПЕРТ" была проведена колосальная работа по аттестации рабочих мест по условиям труда для всех подразделений АО "Эмбамунайгаз".</p>
                             </div>
-                            <a href="#" class="project__item-link">
+                            <a href="#" class="project__item-link js-remove-request-btn">
                                 <svg width="217" height="64" viewBox="0 0 217 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M108.5 63.2461L216.5 0.870869H0.5L108.5 63.2461Z" fill="#289C39"/>
                                 </svg> <span>Подробнее</span>
@@ -933,7 +934,7 @@
                             <div class="project__item-text">
                                 <p>В течение 2015 года отедлом по аттестации рабочих мест ТОО "ЭКОЭКСПЕРТ" была проведена колосальная работа по аттестации рабочих мест по условиям труда для всех подразделений АО "Эмбамунайгаз".</p>
                             </div>
-                            <a href="#" class="project__item-link">
+                            <a href="#" class="project__item-link js-remove-request-btn">
                                 <svg width="217" height="64" viewBox="0 0 217 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M108.5 63.2461L216.5 0.870869H0.5L108.5 63.2461Z" fill="#289C39"/>
                                 </svg> <span>Подробнее</span>
@@ -948,7 +949,7 @@
                             <div class="project__item-text">
                                 <p>В течение 2015 года отедлом по аттестации рабочих мест ТОО "ЭКОЭКСПЕРТ" была проведена колосальная работа по аттестации рабочих мест по условиям труда для всех подразделений АО "Эмбамунайгаз".</p>
                             </div>
-                            <a href="#" class="project__item-link">
+                            <a href="#" class="project__item-link js-remove-request-btn">
                                 <svg width="217" height="64" viewBox="0 0 217 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M108.5 63.2461L216.5 0.870869H0.5L108.5 63.2461Z" fill="#289C39"/>
                                 </svg> <span>Подробнее</span>
@@ -963,7 +964,7 @@
                             <div class="project__item-text">
                                 <p>В течение 2015 года отедлом по аттестации рабочих мест ТОО "ЭКОЭКСПЕРТ" была проведена колосальная работа по аттестации рабочих мест по условиям труда для всех подразделений АО "Эмбамунайгаз".</p>
                             </div>
-                            <a href="#" class="project__item-link">
+                            <a href="#" class="project__item-link js-remove-request-btn">
                                 <svg width="217" height="64" viewBox="0 0 217 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M108.5 63.2461L216.5 0.870869H0.5L108.5 63.2461Z" fill="#289C39"/>
                                 </svg> <span>Подробнее</span>
@@ -982,7 +983,7 @@
             </div>
             <div class="news__wrapper">
                 <div class="news__items left" data-duplicated="true">
-                    <a href="" class="news__item">
+                    <a href="" class="news__item js-remove-request-btn">
                         <div class="news__item-img">
                             <img src="img/news-1.jpeg" alt="">
                         </div>
@@ -994,7 +995,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="" class="news__item">
+                    <a href="" class="news__item js-remove-request-btn">
                         <div class="news__item-img">
                             <img src="img/news-1.jpeg" alt="">
                         </div>
@@ -1006,7 +1007,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="" class="news__item">
+                    <a href="" class="news__item js-remove-request-btn">
                         <div class="news__item-img">
                             <img src="img/news-1.jpeg" alt="">
                         </div>
@@ -1018,7 +1019,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="" class="news__item">
+                    <a href="" class="news__item js-remove-request-btn">
                         <div class="news__item-img">
                             <img src="img/news-1.jpeg" alt="">
                         </div>
@@ -1032,7 +1033,7 @@
                     </a>
                 </div>
                 <div class="news__items right" data-duplicated="true">
-                    <a href="" class="news__item">
+                    <a href="" class="news__item js-remove-request-btn">
                         <div class="news__item-img">
                             <img src="img/news-1.jpeg" alt="">
                         </div>
@@ -1044,7 +1045,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="" class="news__item">
+                    <a href="" class="news__item js-remove-request-btn">
                         <div class="news__item-img">
                             <img src="img/news-1.jpeg" alt="">
                         </div>
@@ -1056,7 +1057,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="" class="news__item">
+                    <a href="" class="news__item js-remove-request-btn">
                         <div class="news__item-img">
                             <img src="img/news-1.jpeg" alt="">
                         </div>
@@ -1068,7 +1069,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="" class="news__item">
+                    <a href="" class="news__item js-remove-request-btn">
                         <div class="news__item-img">
                             <img src="img/news-1.jpeg" alt="">
                         </div>
@@ -1244,7 +1245,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer js-remove-request-btn">
     <div class="container">
         <div class="footer__container">
             <div class="footer__items">
@@ -1303,13 +1304,15 @@
                     <div class="footer__nav-title">Мы в соц сетях</div>
                     <ul class="footer__nav-list">
                         <li class="footer__nav-item">
-                            <a href="" class="footer__nav-link">
-                                <img src="img/inst.png" alt="">@ecoexpert
+                            <img src="img/inst.png" alt="">
+                            <a target="_blank" href="" class="footer__nav-link">
+                                @ecoexpert
                             </a>
                         </li>
                         <li class="footer__nav-item">
-                            <a href="" class="footer__nav-link">
-                                <img src="img/fb.png" alt="">@ecoexpert
+                            <img src="img/fb.png" alt="">
+                            <a target="_blank" href="" class="footer__nav-link">
+                                @ecoexpert
                             </a>
                         </li>
                     </ul>
@@ -1317,18 +1320,18 @@
             </div>
             <div class="footer__elems">
                 <div class="footer__copy">2022 © Все права защищены</div>
-                <a href="https://astanacreative.kz" class="footer__ast">Разработка сайтов в Астане</a>
+                <a target="_blank" href="https://astanacreative.kz" class="footer__ast">Разработка сайтов в Астане</a>
             </div>
         </div>
     </div>
 </footer>
-<!-- <script src="js/jquery-3.6.0.min.js?_v=20220812150515"></script> -->
-<!-- <script src="js/slick.min.js?_v=20220812150515"></script> -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20220812150515" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js?_v=20220812150515"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js?_v=20220812150515"></script>
-<script src="//cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js?_v=20220812150515" type="text/javascript"></script>
-<script src="js/app.js?_v=20220812150515"></script>
+<!-- <script src="js/jquery-3.6.0.min.js?_v=20220816115650"></script> -->
+<!-- <script src="js/slick.min.js?_v=20220816115650"></script> -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20220816115650" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js?_v=20220816115650"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js?_v=20220816115650"></script>
+<script src="//cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js?_v=20220816115650" type="text/javascript"></script>
+<script src="js/app.js?_v=20220816115650"></script>
 </body>
 
 </html>
