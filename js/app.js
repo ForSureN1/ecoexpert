@@ -79,6 +79,48 @@ document.addEventListener('DOMContentLoaded', () => {
         ]
     })
 
+    // $('.documents__items').slick({
+    //     autoplay: false,
+    //     slidesToShow: 3,
+    //     slidesToScroll: 1,
+    // })
+
+
+    var swiper = new Swiper(".documents__items", {
+        slidesPerView: 3,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            type: "progressbar",
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+                spaceBetween: 30,
+            },
+            500: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 3,
+            },
+            850: {
+                slidesPerView: 1,
+            },
+            992: {
+                slidesPerView: 2,
+            },
+            1450: {
+                slidesPerView: 3,
+            }
+        }
+    });
+
+
     $('.hero__slider-1').on('afterChange', function(event, slick, currentSlide, nextSlide) {
         $('.hero__slider-1').find('.slick-current').prev('.slick-slide').prev('.slick-slide').removeClass('current-animate');
         $('.hero__slider-1').find('.slick-current').prev('.slick-slide').removeClass('current-animate');
@@ -279,20 +321,89 @@ document.addEventListener('DOMContentLoaded', () => {
                         count++;
                         item.querySelector('.gallery__item-name .count').innerHTML = count;
                         item.animate([
-                            { opacity: '0'},
-                            { opacity: '1'}
-                        ], { duration: 300, easing: 'ease-in-out', fill: 'forwards'});
+                            { opacity: '0' },
+                            { opacity: '1' }
+                        ], { duration: 300, easing: 'ease-in-out', fill: 'forwards' });
                     } else {
                         item.classList.remove('active');
                     }
                 })
             }
         });
-        if(galleryItemsActive.length) {
-            galleryItemsActive.forEach((item, i)  => {
+        if (galleryItemsActive.length) {
+            galleryItemsActive.forEach((item, i) => {
                 item.querySelector('.gallery__item-name .count').innerHTML = i + 1;
             })
         }
+    }
+
+    // experts filter
+    let expertTabs = document.querySelector('.experts__tabs');
+    let expertsCards = document.querySelector('.experts__items');
+    if (expertTabs) {
+        let expertItems = document.querySelectorAll('.experts__item');
+        expertTabs.addEventListener('click', e => {
+            const target = e.target;
+            if (target.classList.contains('experts__tab')) {
+                document.querySelector('.experts__tab.active').classList.remove('active');
+                target.classList.add('active');
+                let targetId = target.getAttribute('data-id');
+                expertItems.forEach(item => {
+                    if (targetId === item.getAttribute('data-id') && targetId != 1) {
+                        item.style.display = 'flex';
+                        item.animate([
+                            { opacity: '0' },
+                            { opacity: '1' }
+                        ], { duration: 300, easing: 'ease-in-out', fill: 'forwards' })
+                    } else {
+                        item.style.display = 'none';
+                    }
+                })
+                if (targetId == 1) {
+                    expertItems.forEach(item => {
+                        item.style.display = 'flex';
+                        item.animate([
+                            { opacity: '0' },
+                            { opacity: '1' }
+                        ], { duration: 300, easing: 'ease-in-out', fill: 'forwards' })
+
+                    })
+                }
+            }
+        })
+    }
+    if (expertsCards) {
+        expertsCards.addEventListener('click', e => {
+            const target = e.target;
+            if (target.classList.contains('experts__item-img') || target.classList.contains('experts__item-name')) {
+                let backCard = target.closest('.experts__item').querySelector('.experts__item-back');
+                backCard.style.display = 'flex';
+                backCard.animate([{
+                        opacity: '0',
+                        transform: 'translateY(-50px)',
+                    },
+                    {
+                        opacity: '1',
+                        transform: 'translateY(0)',
+                    }
+                ], { duration: 400, easing: 'ease-in-out', fill: 'forwards' })
+            }
+            if (target.classList.contains('experts__item-close')) {
+                let backCard = target.closest('.experts__item').querySelector('.experts__item-back');
+                let animateCard = backCard.animate([{
+                        opacity: '1',
+                        transform: 'translateY(0)',
+                    },
+                    {
+                        opacity: '0',
+                        transform: 'translateY(-50px)',
+                    }
+                ], { duration: 400, easing: 'ease-in-out', fill: 'forwards' });
+                animateCard.addEventListener('finish', () => {
+                    backCard.style.display = 'none';
+                })
+            }
+        })
     }
 
 })
