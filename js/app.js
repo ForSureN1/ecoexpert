@@ -435,6 +435,38 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     }
 
+    // services page sidebar
+
+    let servicesSidebar = document.querySelector('.services__sidebar-list');
+    if (servicesSidebar) {
+        // let firstSidebarItem = document.querySelector('.js-first-sidebar-item');
+        // if (firstSidebarItem) {
+        //     firstSidebarItem.style.maxHeight = `${firstSidebarItem.scrollHeight}px`;
+        // }
+        servicesSidebar.addEventListener('click', e => {
+            const target = e.target;
+            if (target.classList.contains('services__sidebar-header') && !target.classList.contains('active')) {
+                let activeItem = document.querySelector('.services__sidebar-header.active');
+                if (activeItem) {
+                    activeItem.classList.remove('active');
+                }
+                document.querySelectorAll('.services__sidebar-body').forEach(item => item.style.maxHeight = `0px`);
+                target.classList.add('active');
+                if (target.nextElementSibling.classList.contains('services__sidebar-body')) {
+                    let bodySidebar = target.nextElementSibling;
+                    bodySidebar.style.maxHeight = `${bodySidebar.scrollHeight}px`;
+                }
+            } else {
+                target.classList.remove('active');
+                if (target.nextElementSibling.classList.contains('services__sidebar-body')) {
+                    let bodySidebar = target.nextElementSibling;
+                    bodySidebar.style.maxHeight = `0px`;
+                }
+            }
+        })
+    }
+
+
 })
 
 function submitForm() {
