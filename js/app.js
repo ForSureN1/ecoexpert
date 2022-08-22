@@ -466,6 +466,32 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     }
 
+    // projects tabs 
+    let planSection = document.querySelector('.plan');
+    if (planSection) {
+        let planTabs = document.querySelectorAll('.plan__list-item');
+        let planItems = document.querySelectorAll('.plan__item');
+        planSection.addEventListener('click', e => {
+            const target = e.target;
+            if (target.classList.contains('plan__list-item')) {
+                let activeTab = document.querySelector('.plan__list-item.active');
+                if (activeTab) {
+                    activeTab.classList.remove('active');
+                }
+                target.classList.add('active');
+            }
+        })
+        planTabs.forEach((key, i) => {
+            key.addEventListener('click', () => {
+                planItems.forEach((item, j) => {
+                    item.classList.remove('active');
+                    if (i === j) {
+                        item.classList.add('active');
+                    }
+                })
+            })
+        })
+    }
 
 })
 
