@@ -531,7 +531,37 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     }
 
-})
+    // show popup
+
+    let formPopup = document.querySelector('.popupform');
+    let formPopupClose = document.querySelector('.popupform__block-close');
+    if (formPopupClose) {
+        formPopupClose.addEventListener('click', () => {
+            let formPopupAnimate = formPopup.animate(
+                [{ opacity: '1' }, { opacity: '0' }], { duration: 300, fill: 'forwards', easing: 'ease-in' }
+            );
+            formPopupAnimate.addEventListener('finish', () => {
+                formPopup.style.display = 'none'
+            });
+        });
+    }
+
+    let jsShowPopup = document.querySelectorAll('.js-show-popup');
+    if (jsShowPopup.length) {
+        jsShowPopup.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                formPopup.style.display = 'flex'
+                formPopup.animate([{ opacity: '0' }, { opacity: '1' }], {
+                    duration: 300,
+                    fill: 'forwards',
+                    easing: 'ease-in',
+                });
+            });
+        });
+    }
+
+
+});
 
 function submitForm() {
     $('#form_loader').show();

@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <title>Главная</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css?_v=20220824145956">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css?_v=20220824145956">
-    <link rel="stylesheet" href="css/style.css?_v=20220824145956">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css?_v=20220824162721">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css?_v=20220824162721">
+    <link rel="stylesheet" href="css/style.css?_v=20220824162721">
 </head>
 
 <body>
@@ -29,10 +29,13 @@
             <a href="#" class="header__logo js-remove-request-btn">
                 <img src="img/logo.png" alt="EcoExpert">
             </a>
-            <div class="header__lang js-remove-request-btn">
-                <a href="#" class="header__lang-item active">Ru</a>
-                <a href="#" class="header__lang-item">Kz</a>
-                <a href="#" class="header__lang-item">En</a>
+            <div class="header__lang-wrapper">
+                <a href="javascript:;" class="header__lang-active">Ru</a>
+                <div class="header__lang js-remove-request-btn">
+                    <a href="#" class="header__lang-item active">Ru</a>
+                    <a href="#" class="header__lang-item">Kz</a>
+                    <a href="#" class="header__lang-item">En</a>
+                </div>
             </div>
             <div class="header__nav js-remove-request-btn">
                 <div class="container">
@@ -120,7 +123,7 @@
         </div>
     </div>
 </header>
-    <a href="javascript:;" class="btn-request">Оставить заявку</a>
+    <a href="javascript:;" class="btn-request js-show-popup">Оставить заявку</a>
     <main>
         <section class="hero">
             <div class="hero__slider hero__slider-1 hero__slider-one">
@@ -182,7 +185,7 @@
                         <img src="img/mouse.png" alt="">
                     </a>
                     <div class="hero__nav">
-                        <a href="#" class="hero__nav-share js-remove-request-btn">
+                        <a href="https://api.whatsapp.com/send?text=" target="_blank" class="hero__nav-share js-remove-request-btn">
                             <img src="img/share.png" alt="">
                             <span>Поделиться</span>
                         </a>
@@ -1246,7 +1249,34 @@
             </div>
         </section>
     </main>
-    <footer class="footer js-remove-request-btn">
+    <div class="popupform js-remove-request-btn">
+    <div class="popupform__block">
+        <div class="popupform__block-close">
+            <img src="img/close.png" alt="">
+        </div>
+        <div class="popupform__block-title">Оставить заявку</div>
+        <form action="">
+            <div class="popupform__block-col">
+                <span>Введите Имя</span>
+                <input type="text">
+            </div>
+            <div class="popupform__block-col">
+                <span>Введите Email</span>
+                <input type="mail">
+            </div>
+            <div class="popupform__block-col">
+                <span>Введите номер телефона</span>
+                <input type="tel">
+            </div>
+            <button type="submit" class="popupform__block-submit green-btn">Отправить 
+                <svg width="29" height="7" viewBox="0 0 29 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23 1L28 6H23V1Z" fill="white"/>
+                    <path d="M1 6H23M23 6H28L23 1V6Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </form>
+    </div>
+</div> <footer class="footer js-remove-request-btn">
     <div class="container">
         <div class="footer__container">
             <div class="footer__items">
@@ -1326,14 +1356,14 @@
         </div>
     </div>
 </footer>
-<!-- <script src="js/jquery-3.6.0.min.js?_v=20220824145956"></script> -->
-<!-- <script src="js/slick.min.js?_v=20220824145956"></script> -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20220824145956" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js?_v=20220824145956"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js?_v=20220824145956"></script>
-<script src="//cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js?_v=20220824145956" type="text/javascript"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js?_v=20220824145956"></script>
-<script src="js/app.js?_v=20220824145956"></script>
+<!-- <script src="js/jquery-3.6.0.min.js?_v=20220824162721"></script> -->
+<!-- <script src="js/slick.min.js?_v=20220824162721"></script> -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20220824162721" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js?_v=20220824162721"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js?_v=20220824162721"></script>
+<script src="//cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js?_v=20220824162721" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js?_v=20220824162721"></script>
+<script src="js/app.js?_v=20220824162721"></script>
 </body>
 
 </html>
