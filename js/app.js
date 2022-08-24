@@ -117,7 +117,20 @@ document.addEventListener('DOMContentLoaded', () => {
             1450: {
                 slidesPerView: 3,
             }
-        }
+        },
+    });
+    let totalSlide = $('.documents__items .swiper-slide:not(.swiper-slide-duplicate)').length;
+    let templateTotalSlide = document.querySelector('#totalSlides');
+    if (templateTotalSlide) {
+        templateTotalSlide.innerHTML = totalSlide < 10 ? ("0" + totalSlide) : totalSlide;
+    }
+    swiper.on('slideChange', function() {
+        let currentSlide = document.querySelector('#numberSlides');
+        let current = swiper.realIndex + 1;
+        if (current > totalSlide)
+            current = 1;
+        let idx = current < 10 ? ("0" + current) : current;
+        currentSlide.innerHTML = (idx);
     });
 
     let partnersSwiper = new Swiper('.pairs__slider', {
@@ -194,18 +207,27 @@ document.addEventListener('DOMContentLoaded', () => {
         $('.hero__slider-1').slick('slickPrev');
         $('.hero__slider-2').slick('slickPrev');
         $('.hero__slider-3').slick('slickPrev');
+        $('.hero__slider-1').addClass('reverse');
+        $('.hero__slider-2').addClass('reverse');
+        $('.hero__slider-3').addClass('reverse');
     });
 
     $('.next-arrow').click(function() {
         $('.hero__slider-1').slick('slickNext');
         $('.hero__slider-2').slick('slickNext');
         $('.hero__slider-3').slick('slickNext');
+        $('.hero__slider-1').removeClass('reverse');
+        $('.hero__slider-2').removeClass('reverse');
+        $('.hero__slider-3').removeClass('reverse');
     });
 
     $('.hero__nav-swap').click(function() {
         $('.hero__slider-1').slick('slickNext');
         $('.hero__slider-2').slick('slickNext');
         $('.hero__slider-3').slick('slickNext');
+        $('.hero__slider-1').removeClass('reverse');
+        $('.hero__slider-2').removeClass('reverse');
+        $('.hero__slider-3').removeClass('reverse');
     });
 
     let burger = document.querySelector('.burger')
@@ -330,8 +352,8 @@ document.addEventListener('DOMContentLoaded', () => {
             let X = (Y = 0)
 
             function move() {
-                heroBtn.style.left = X + 'px'
-                heroBtn.style.top = Y + 'px'
+                heroBtn.style.left = Math.min(X) + 'px'
+                heroBtn.style.top = Math.min(Y) + 'px'
             }
             document.addEventListener('mousemove', function(e) {
                     heroBtn.style.display = 'flex';
