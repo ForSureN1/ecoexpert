@@ -5878,7 +5878,7 @@ select {
   }
 
   .header__menu-list {
-    left: 16px;
+    left: 0;
   }
 
   .header__menu-content {
@@ -6127,6 +6127,10 @@ select {
     right: 0;
     width: 100%;
     top: 25%;
+  }
+
+  .header__menu-list {
+    left: 16px;
   }
 
   .header__menu-list.main-page .header__menu-item:nth-child(1) a {
